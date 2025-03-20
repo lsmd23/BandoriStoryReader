@@ -1,0 +1,5469 @@
+{
+    "Base": {
+        "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "0000000000000000"
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+            "m_FileID": 0,
+            "m_PathID": "6adbc306fd0be204"
+        },
+        "m_Name": "Scenarioevent01-03",
+        "scenarioSceneId": "event01-03",
+        "storyType": 0,
+        "appearCharacters": [
+            {
+                "characterId": 5,
+                "costumeType": "005_school_winter"
+            },
+            {
+                "characterId": 3,
+                "costumeType": "003_school_winter"
+            },
+            {
+                "characterId": 4,
+                "costumeType": "004_school_winter"
+            },
+            {
+                "characterId": 20,
+                "costumeType": "020_school_winter"
+            },
+            {
+                "characterId": 1,
+                "costumeType": "001_school_winter"
+            },
+            {
+                "characterId": 2,
+                "costumeType": "002_school_winter"
+            },
+            {
+                "characterId": 13,
+                "costumeType": "013_school_winter"
+            },
+            {
+                "characterId": 15,
+                "costumeType": "015_school_winter"
+            },
+            {
+                "characterId": 11,
+                "costumeType": "011_school_winter"
+            }
+        ],
+        "firstLayout": [],
+        "firstBgm": "03_Normal",
+        "firstBackground": "bg00014",
+        "firstBackgroundBundleName": "bg/scenario1",
+        "snippets": [
+            {
+                "actionType": 6,
+                "progressType": 1,
+                "referenceIndex": 0,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 0,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 0,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 1,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 1,
+                "delay": 3.799999952316284,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 2,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 3,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 2,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 4,
+                "delay": 2.5,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 3,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 4,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 5,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 5,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 0,
+                "referenceIndex": 6,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 7,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 6,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 8,
+                "delay": 2,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 9,
+                "delay": 4.599999904632568,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 10,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 11,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 7,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 12,
+                "delay": 1.2000000476837158,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 13,
+                "delay": 3.5,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 14,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 15,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 8,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 16,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 17,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 9,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 18,
+                "delay": 2.799999952316284,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 10,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 11,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 19,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 0,
+                "referenceIndex": 20,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 12,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 21,
+                "delay": 3,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 13,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 14,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 22,
+                "delay": 4,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 23,
+                "delay": 7.800000190734863,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 24,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 0,
+                "referenceIndex": 25,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 26,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 15,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 27,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 28,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 16,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 29,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 30,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 0,
+                "referenceIndex": 31,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 17,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 18,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 19,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 20,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 32,
+                "delay": 1.7999999523162842,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 33,
+                "delay": 4.199999809265137,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 34,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 0,
+                "referenceIndex": 35,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 36,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 21,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 37,
+                "delay": 2.200000047683716,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 38,
+                "delay": 4.599999904632568,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 39,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 40,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 0,
+                "referenceIndex": 41,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 22,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 42,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 0,
+                "referenceIndex": 43,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 44,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 23,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 45,
+                "delay": 2.4000000953674316,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 46,
+                "delay": 4.800000190734863,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 47,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 48,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 24,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 49,
+                "delay": 4.800000190734863,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 50,
+                "delay": 7.5,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 51,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 52,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 25,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 53,
+                "delay": 4.300000190734863,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 54,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 55,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 26,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 56,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 0,
+                "referenceIndex": 57,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 27,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 28,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 58,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 0,
+                "referenceIndex": 59,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 60,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 0,
+                "referenceIndex": 61,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 29,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 62,
+                "delay": 1.7000000476837158,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 30,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 63,
+                "delay": 4.800000190734863,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 64,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 0,
+                "referenceIndex": 65,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 66,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 0,
+                "referenceIndex": 67,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 31,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 68,
+                "delay": 3.200000047683716,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 69,
+                "delay": 5.800000190734863,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 6,
+                "progressType": 1,
+                "referenceIndex": 1,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 70,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 0,
+                "referenceIndex": 71,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 6,
+                "progressType": 1,
+                "referenceIndex": 2,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 1,
+                "referenceIndex": 72,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 1,
+                "referenceIndex": 73,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 1,
+                "referenceIndex": 74,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 1,
+                "referenceIndex": 75,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 1,
+                "referenceIndex": 76,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 1,
+                "referenceIndex": 77,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 1,
+                "referenceIndex": 78,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 79,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 0,
+                "referenceIndex": 80,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 6,
+                "progressType": 1,
+                "referenceIndex": 3,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 32,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 81,
+                "delay": 2.5999999046325684,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 33,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 82,
+                "delay": 2.799999952316284,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 34,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 35,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 6,
+                "progressType": 1,
+                "referenceIndex": 4,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 83,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 0,
+                "referenceIndex": 84,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 85,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 0,
+                "referenceIndex": 86,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 6,
+                "progressType": 1,
+                "referenceIndex": 5,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 1,
+                "referenceIndex": 87,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 1,
+                "referenceIndex": 88,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 6,
+                "progressType": 1,
+                "referenceIndex": 6,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 36,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 89,
+                "delay": 3.5,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 90,
+                "delay": 8.800000190734863,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 37,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 91,
+                "delay": 0.4000000059604645,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 92,
+                "delay": 2.5,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 93,
+                "delay": 5.300000190734863,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 94,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 0,
+                "referenceIndex": 95,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 96,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 38,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 97,
+                "delay": 2,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 98,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 39,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 99,
+                "delay": 3,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 100,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 0,
+                "referenceIndex": 101,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 102,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 40,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 103,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 104,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 0,
+                "referenceIndex": 105,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 41,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 106,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 0,
+                "referenceIndex": 107,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 108,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 42,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 109,
+                "delay": 3,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 110,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 111,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 43,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 112,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 113,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 7,
+                "progressType": 1,
+                "referenceIndex": 0,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 44,
+                "delay": 1,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 114,
+                "delay": 3.200000047683716,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 115,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 6,
+                "progressType": 1,
+                "referenceIndex": 7,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 6,
+                "progressType": 1,
+                "referenceIndex": 8,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 1,
+                "referenceIndex": 116,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 1,
+                "referenceIndex": 117,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 6,
+                "progressType": 1,
+                "referenceIndex": 9,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 6,
+                "progressType": 1,
+                "referenceIndex": 10,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 118,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 0,
+                "referenceIndex": 119,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 45,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 120,
+                "delay": 2.0999999046325684,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 121,
+                "delay": 6.099999904632568,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 46,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 122,
+                "delay": 2.200000047683716,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 47,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 123,
+                "delay": 2.299999952316284,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 124,
+                "delay": 5.900000095367432,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 125,
+                "delay": 7.599999904632568,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 48,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 126,
+                "delay": 1.7999999523162842,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 127,
+                "delay": 4.300000190734863,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 128,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 0,
+                "referenceIndex": 129,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 130,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 0,
+                "referenceIndex": 131,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 49,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 50,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 4,
+                "progressType": 0,
+                "referenceIndex": 132,
+                "delay": 2.9000000953674316,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 133,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 0,
+                "referenceIndex": 134,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 135,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 51,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 52,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 53,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 54,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 55,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 136,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 137,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 56,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 138,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 2,
+                "progressType": 1,
+                "referenceIndex": 139,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            },
+            {
+                "actionType": 1,
+                "progressType": 1,
+                "referenceIndex": 57,
+                "delay": 0,
+                "isWaitForSkipMode": 0
+            }
+        ],
+        "talkData": [
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 5
+                    }
+                ],
+                "windowDisplayName": "有咲",
+                "body": "我是不是来太早了？\n……不过，离约好的时间还剩不到10分钟啊……",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 5,
+                        "motionName": "surprised01",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 5,
+                        "voiceId": "event01-03-001",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 5
+                    }
+                ],
+                "windowDisplayName": "有咲",
+                "body": "……这样子，看起来好像我才是最迫不及待的人一样。\n唉……",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 5,
+                        "motionName": "angry01",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 5,
+                        "voiceId": "event01-03-002",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 3
+                    }
+                ],
+                "windowDisplayName": "里美",
+                "body": "啊，小有咲早上好！\n啊、咦！？我记错碰面时间了吗？",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 3,
+                        "motionName": "smile01",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 3,
+                        "voiceId": "event01-03-003",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 5
+                    }
+                ],
+                "windowDisplayName": "有咲",
+                "body": "没有，你没记错。\n……只是我们来太早了而已",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 5,
+                        "motionName": "nf01",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 5,
+                        "voiceId": "event01-03-004",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 3
+                    }
+                ],
+                "windowDisplayName": "里美",
+                "body": "是吗，太好啦~\n小沙绫和惠惠也说马上就会来",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 3,
+                        "motionName": "smile01",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 3,
+                        "voiceId": "event01-03-005",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 5
+                    }
+                ],
+                "windowDisplayName": "有咲",
+                "body": "明白了~",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 5,
+                        "motionName": "nf05",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 5,
+                        "voiceId": "event01-03-006",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 4
+                    }
+                ],
+                "windowDisplayName": "沙绫",
+                "body": "咦？你们两人来得好早啊\n有咲，你是不是过于迫不及待，所以来早了？",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 4,
+                        "motionName": "surprised01",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 4,
+                        "voiceId": "event01-03-007",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 5
+                    }
+                ],
+                "windowDisplayName": "有咲",
+                "body": "啊！？才、才不是呢！\n应该比约好的时间来得更早一些，\n这不是常识吗？",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 5,
+                        "motionName": "surprised01",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 5,
+                        "voiceId": "event01-03-008",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 4
+                    }
+                ],
+                "windowDisplayName": "沙绫",
+                "body": "好吧好吧，是这样哦？",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 4,
+                        "motionName": "nf05",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 4,
+                        "voiceId": "event01-03-009",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 20
+                    }
+                ],
+                "windowDisplayName": "伊芙",
+                "body": "早上好！\n今天天气不错，真是太好啦！",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 20,
+                        "motionName": "nf05",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 20,
+                        "voiceId": "event01-03-010",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 20
+                    }
+                ],
+                "windowDisplayName": "伊芙",
+                "body": "有咲同学，你的眉头都皱起来啦！\n没事吧？",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 20,
+                        "motionName": "surprised01",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 20,
+                        "voiceId": "event01-03-011",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 20
+                    }
+                ],
+                "windowDisplayName": "伊芙",
+                "body": "是不是不舒服……？",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 20,
+                        "motionName": "eeto01",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 20,
+                        "voiceId": "event01-03-012",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 5
+                    }
+                ],
+                "windowDisplayName": "有咲",
+                "body": "啊、没有……不是的……\n谢谢你的关心……哦呵呵呵……",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 5,
+                        "motionName": "surprised01",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 5,
+                        "voiceId": "event01-03-013",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 20
+                    }
+                ],
+                "windowDisplayName": "伊芙",
+                "body": "那就好！",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 20,
+                        "motionName": "nf05",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 20,
+                        "voiceId": "event01-03-014",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 20
+                    }
+                ],
+                "windowDisplayName": "伊芙",
+                "body": "话说回来，有咲同学非常贤淑，\n感觉是一名完美的大和抚子呢~\n与樱花很相称呀！",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 20,
+                        "motionName": "nf03",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 20,
+                        "voiceId": "event01-03-015",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 3
+                    }
+                ],
+                "windowDisplayName": "里美",
+                "body": "唔、嗯……是、是啊",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 3,
+                        "motionName": "smile03",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 3,
+                        "voiceId": "event01-03-016",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 1
+                    }
+                ],
+                "windowDisplayName": "香澄",
+                "body": "抱、抱歉————————！\n我迟到啦————————！",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 1,
+                        "motionName": "bye01",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 1,
+                        "voiceId": "event01-03-017",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 5
+                    }
+                ],
+                "windowDisplayName": "有咲",
+                "body": "香、香澄！你这混蛋！",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 5,
+                        "motionName": "angry01",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 5,
+                        "voiceId": "event01-03-018",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 20
+                    }
+                ],
+                "windowDisplayName": "伊芙",
+                "body": "你、你这混蛋？\n有咲同学……？",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 20,
+                        "motionName": "surprised01",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 20,
+                        "voiceId": "event01-03-019",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 5
+                    }
+                ],
+                "windowDisplayName": "有咲",
+                "body": "！？",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 5,
+                        "motionName": "surprised01",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 5,
+                        "voiceId": "event01-03-020",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 5
+                    }
+                ],
+                "windowDisplayName": "有咲",
+                "body": "……混蛋……蛋……你带茶叶蛋来了没……？\n你有没有带茶叶蛋来……呢？",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [],
+                "voices": [
+                    {
+                        "characterId": 5,
+                        "voiceId": "event01-03-021",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 1
+                    }
+                ],
+                "windowDisplayName": "香澄",
+                "body": "茶叶蛋？我、我们有约好要带那种东西吗？\n虽然没带茶叶蛋，不过我带了许多甜点哦！",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 1,
+                        "motionName": "surprised01",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 1,
+                        "voiceId": "event01-03-022",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 5
+                    }
+                ],
+                "windowDisplayName": "有咲",
+                "body": "是、是吗。\n谢谢你哦。哦呵呵呵……",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 5,
+                        "motionName": "odoodo01",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 5,
+                        "voiceId": "event01-03-023",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 1
+                    }
+                ],
+                "windowDisplayName": "香澄",
+                "body": "有咲，你有点奇怪诶？……诶，算了。\n……咦？只有这么几个人来了？其他人呢？",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 1,
+                        "motionName": "surprised01",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 1,
+                        "voiceId": "event01-03-024",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 3
+                    }
+                ],
+                "windowDisplayName": "里美",
+                "body": "其他人在做赏花会上吃的料理，会晚些才能过来。\n我也刚刚到。\n小香澄你烹饪了什么菜？",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 3,
+                        "motionName": "nf04",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 3,
+                        "voiceId": "event01-03-025",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 1
+                    }
+                ],
+                "windowDisplayName": "香澄",
+                "body": "我拿来了许多甜点！\n我不太擅长做菜，所以就拿点心凑合吧。\n诶嘿嘿……",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 1,
+                        "motionName": "jaan01",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 1,
+                        "voiceId": "event01-03-026",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 2
+                    }
+                ],
+                "windowDisplayName": "多惠",
+                "body": "啊，大家都已经到啦",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 2,
+                        "motionName": "smile01",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 2,
+                        "voiceId": "event01-03-027",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 1
+                    }
+                ],
+                "windowDisplayName": "香澄",
+                "body": "啊，惠惠，早上好~！",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 1,
+                        "motionName": "bye01",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 1,
+                        "voiceId": "event01-03-028",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 2
+                    }
+                ],
+                "windowDisplayName": "多惠",
+                "body": "我还在半路上碰到了她们",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 2,
+                        "motionName": "nf03",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 2,
+                        "voiceId": "event01-03-029",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 13
+                    }
+                ],
+                "windowDisplayName": "育美",
+                "body": "大家久等啦~！铛铛！\n育美和小美也一起来啦！",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 13,
+                        "motionName": "bye01",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 13,
+                        "voiceId": "event01-03-030",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 15
+                    }
+                ],
+                "windowDisplayName": "美咲",
+                "body": "早上好。\n我并不算情绪高涨，也不想喊什么『铛铛』，\n所以就正常地出现了",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 15,
+                        "motionName": "nf04",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 15,
+                        "voiceId": "event01-03-031",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 1
+                    }
+                ],
+                "windowDisplayName": "香澄",
+                "body": "诶……这样一来就算是全员到齐了吧……？\n嗯！那么，我们去心心家吧！",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 1,
+                        "motionName": "eeto01",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 1,
+                        "voiceId": "event01-03-032",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 1,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 1
+                    }
+                ],
+                "windowDisplayName": "香澄",
+                "body": "我好想在这里赏花~！\n想现在就开始赏花~！",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 1,
+                        "motionName": "jaan01",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 1,
+                        "voiceId": "event01-03-034",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 13
+                    }
+                ],
+                "windowDisplayName": "育美",
+                "body": "不行不行，小香。\n小心心家可是比这里壮观得多哦",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 13,
+                        "motionName": "nf01",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 13,
+                        "voiceId": "event01-03-035",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 1
+                    }
+                ],
+                "windowDisplayName": "香澄",
+                "body": "比这里还壮观……怎么可能？",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 1,
+                        "motionName": "surprised01",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 1,
+                        "voiceId": "event01-03-036",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 13
+                    }
+                ],
+                "windowDisplayName": "育美",
+                "body": "好啦好啦，你就期待着吧",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 13,
+                        "motionName": "smile01",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 13,
+                        "voiceId": "event01-03-037",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 1,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 1
+                    }
+                ],
+                "windowDisplayName": "香澄",
+                "body": "……我说，小育？心心家还没到吗？\n从刚才开始我们就一直沿着一道非~常长的墙壁走着……\n我都有点困了……",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 1,
+                        "motionName": "serious01",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 1,
+                        "voiceId": "event01-03-038",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 13
+                    }
+                ],
+                "windowDisplayName": "育美",
+                "body": "好啦！大家久等了！\n终于抵达啦~！\n这里就是小心心的家！",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 13,
+                        "motionName": "nf05",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 13,
+                        "voiceId": "event01-03-039",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 5
+                    }
+                ],
+                "windowDisplayName": "有咲",
+                "body": "这里就是？啊哈哈，别开玩笑了。\n这里可是这片地区大型的知名豪宅",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 5,
+                        "motionName": "surprised01",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 5,
+                        "voiceId": "event01-03-040",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 4
+                    }
+                ],
+                "windowDisplayName": "沙绫",
+                "body": "啊，等一下。\n说起来，心的姓氏是弦卷吧？",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 4,
+                        "motionName": "surprised01",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 4,
+                        "voiceId": "event01-03-041",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 3
+                    }
+                ],
+                "windowDisplayName": "里美",
+                "body": "门牌上写着……『弦卷』……",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 3,
+                        "motionName": "serious01",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 3,
+                        "voiceId": "event01-03-042",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 5
+                    }
+                ],
+                "windowDisplayName": "有咲",
+                "body": "那、那么，这里真的是弦卷同学的家……？",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 5,
+                        "motionName": "serious01",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 5,
+                        "voiceId": "event01-03-043",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 13
+                    }
+                ],
+                "windowDisplayName": "育美",
+                "body": "我刚才不都说了吗~！\n这里就是小心心家啊~",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 13,
+                        "motionName": "serious01",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 13,
+                        "voiceId": "event01-03-044",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 4
+                    }
+                ],
+                "windowDisplayName": "沙绫",
+                "body": "心竟然是弦卷家的一员……\n真是令我吃惊……",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 4,
+                        "motionName": "surprised01",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 4,
+                        "voiceId": "event01-03-045",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 11
+                    }
+                ],
+                "windowDisplayName": "心",
+                "body": "欢迎各位！\n快进来吧！",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 11,
+                        "motionName": "jaan01",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 11,
+                        "voiceId": "event01-03-046",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 1,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 1
+                    }
+                ],
+                "windowDisplayName": "香澄",
+                "body": "……这、这是梦吗……？\n莫非我睡太久了，现在还在做梦？\n我的视野里……充斥着粉色……！",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 1,
+                        "motionName": "surprised01",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 1,
+                        "voiceId": "event01-03-047",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 1
+                    }
+                ],
+                "windowDisplayName": "香澄",
+                "body": "……我要捏一下脸颊……好痛！\n果然……不是梦吧？",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 1,
+                        "motionName": "nf05",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 1,
+                        "voiceId": "event01-03-048",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 11
+                    }
+                ],
+                "windowDisplayName": "心",
+                "body": "大家请自便！\n想跑步、横躺、后空翻都可以！\n在这里可以自由地做任何事！",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 11,
+                        "motionName": "nf05",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 11,
+                        "voiceId": "event01-03-049",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 11
+                    }
+                ],
+                "windowDisplayName": "心",
+                "body": "稍后，那边的网球场会\n召开羽毛球大赛！\n敬请期待！",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 11,
+                        "motionName": "nf03",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 11,
+                        "voiceId": "event01-03-050",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 2
+                    }
+                ],
+                "windowDisplayName": "多惠",
+                "body": "……啊，那边有喷泉",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 2,
+                        "motionName": "eeto01",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 2,
+                        "voiceId": "event01-03-051",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 20
+                    }
+                ],
+                "windowDisplayName": "伊芙",
+                "body": "好厉害……！这么大的房子，\n在芬兰也很少见呢……！",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 20,
+                        "motionName": "surprised01",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 20,
+                        "voiceId": "event01-03-052",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 1,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 5
+                    }
+                ],
+                "windowDisplayName": "有咲",
+                "body": "话说，这是什么鬼地方啊！？\n怎么会这样！？一般来说是不可能的吧？！",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 5,
+                        "motionName": "angry03",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 5,
+                        "voiceId": "event01-03-053",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 5
+                    }
+                ],
+                "windowDisplayName": "有咲",
+                "body": "……！？",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 5,
+                        "motionName": "serious01",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 5,
+                        "voiceId": "event01-03-054",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 0
+                    }
+                ],
+                "windowDisplayName": "有咲",
+                "body": "（不、不妙！这个场面实在太惊人了，\n让我忍不住吐槽了！万一被别人听见了……）",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 5,
+                        "motionName": "odoodo01",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 0,
+                        "voiceId": "event01-03-055",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 5
+                    }
+                ],
+                "windowDisplayName": "有咲",
+                "body": "……",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 5,
+                        "motionName": "surprised01",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 5,
+                        "voiceId": "event01-03-056",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 0
+                    }
+                ],
+                "windowDisplayName": "有咲",
+                "body": "（……呼。太好了……大家都被这片场面吓到了，\n没有人听到我说话……）",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 5,
+                        "motionName": "smile01",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 0,
+                        "voiceId": "event01-03-057",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 11
+                    }
+                ],
+                "windowDisplayName": "心",
+                "body": "那么！\n麻烦诸位准备一下！",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 11,
+                        "motionName": "nf02",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 11,
+                        "voiceId": "event01-03-058",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            },
+            {
+                "talkCharacters": [
+                    {
+                        "characterId": 3
+                    }
+                ],
+                "windowDisplayName": "里美",
+                "body": "……诶？\n房子里走出来了一大群身穿黑衣的人……\n到、到底是怎么回事啊~！？",
+                "tention": 0,
+                "lipSyncMode": 1,
+                "motionChangeFactor": 1,
+                "motions": [
+                    {
+                        "characterId": 3,
+                        "motionName": "surprised01",
+                        "expressionName": "",
+                        "timingSyncValue": 0
+                    }
+                ],
+                "voices": [
+                    {
+                        "characterId": 3,
+                        "voiceId": "event01-03-059",
+                        "volume": 1
+                    }
+                ],
+                "speed": 0,
+                "fontSize": 0,
+                "whenFinishCloseWindow": 0,
+                "requirePlayEffect": 0,
+                "effectReferenceIdx": 0,
+                "requirePlaySound": 0,
+                "soundReferenceIdx": 0,
+                "whenStartHideWindow": 0
+            }
+        ],
+        "selectableData": [],
+        "layoutData": [
+            {
+                "type": 2,
+                "sideFrom": 4,
+                "sideFromOffsetX": 0,
+                "sideTo": 4,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 5,
+                "costumeType": "005_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 5,
+                "costumeType": "",
+                "motionName": "smile03",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 1,
+                "sideFrom": 0,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 5,
+                "costumeType": "005_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 2,
+                "sideFrom": 7,
+                "sideFromOffsetX": 0,
+                "sideTo": 7,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 3,
+                "costumeType": "003_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 3,
+                "costumeType": "",
+                "motionName": "awate01",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 3,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 5,
+                "costumeType": "005_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 3,
+                "sideFrom": 7,
+                "sideFromOffsetX": 0,
+                "sideTo": 7,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 3,
+                "costumeType": "",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 2,
+                "sideFrom": 4,
+                "sideFromOffsetX": 0,
+                "sideTo": 4,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 4,
+                "costumeType": "004_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 4,
+                "costumeType": "",
+                "motionName": "nf03",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 4,
+                "costumeType": "",
+                "motionName": "nf02",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 3,
+                "sideFrom": 4,
+                "sideFromOffsetX": 0,
+                "sideTo": 4,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 4,
+                "costumeType": "004_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 2,
+                "sideFrom": 4,
+                "sideFromOffsetX": 0,
+                "sideTo": 4,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 5,
+                "costumeType": "005_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 5,
+                "costumeType": "",
+                "motionName": "angry02",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 5,
+                "costumeType": "",
+                "motionName": "angry03",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 3,
+                "sideFrom": 4,
+                "sideFromOffsetX": 0,
+                "sideTo": 4,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 5,
+                "costumeType": "",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 2,
+                "sideFrom": 4,
+                "sideFromOffsetX": 0,
+                "sideTo": 4,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 4,
+                "costumeType": "004_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 3,
+                "sideFrom": 4,
+                "sideFromOffsetX": 0,
+                "sideTo": 4,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 4,
+                "costumeType": "004_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 2,
+                "sideFrom": 4,
+                "sideFromOffsetX": 0,
+                "sideTo": 4,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 20,
+                "costumeType": "020_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 20,
+                "costumeType": "",
+                "motionName": "smile02",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 1,
+                "sideFrom": 0,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 20,
+                "costumeType": "020_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 2,
+                "sideFrom": 7,
+                "sideFromOffsetX": 0,
+                "sideTo": 7,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 5,
+                "costumeType": "005_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 5,
+                "costumeType": "",
+                "motionName": "odoodo01",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 20,
+                "costumeType": "",
+                "motionName": "smile01",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 20,
+                "costumeType": "",
+                "motionName": "smile02",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 3,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 20,
+                "costumeType": "020_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 3,
+                "sideFrom": 7,
+                "sideFromOffsetX": 0,
+                "sideTo": 7,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 5,
+                "costumeType": "005_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 2,
+                "sideFrom": 4,
+                "sideFromOffsetX": 0,
+                "sideTo": 4,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 3,
+                "costumeType": "003_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 3,
+                "sideFrom": 4,
+                "sideFromOffsetX": 0,
+                "sideTo": 4,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 3,
+                "costumeType": "003_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 2,
+                "sideFrom": 4,
+                "sideFromOffsetX": 0,
+                "sideTo": 4,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 1,
+                "costumeType": "001_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 3,
+                "sideFrom": 4,
+                "sideFromOffsetX": 0,
+                "sideTo": 4,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 1,
+                "costumeType": "001_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 2,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 20,
+                "costumeType": "020_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 2,
+                "sideFrom": 7,
+                "sideFromOffsetX": 0,
+                "sideTo": 7,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 5,
+                "costumeType": "005_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 5,
+                "costumeType": "",
+                "motionName": "surprised01",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 5,
+                "costumeType": "",
+                "motionName": "odoodo01",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 3,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 20,
+                "costumeType": "020_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 3,
+                "sideFrom": 7,
+                "sideFromOffsetX": 0,
+                "sideTo": 7,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 5,
+                "costumeType": "005_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 2,
+                "sideFrom": 4,
+                "sideFromOffsetX": 0,
+                "sideTo": 4,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 1,
+                "costumeType": "001_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 1,
+                "costumeType": "",
+                "motionName": "eeto01",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 1,
+                "costumeType": "",
+                "motionName": "smile01",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 3,
+                "sideFrom": 4,
+                "sideFromOffsetX": 0,
+                "sideTo": 4,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 1,
+                "costumeType": "",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 2,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 20,
+                "costumeType": "020_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 2,
+                "sideFrom": 7,
+                "sideFromOffsetX": 0,
+                "sideTo": 7,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 5,
+                "costumeType": "005_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 3,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 20,
+                "costumeType": "020_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 3,
+                "sideFrom": 7,
+                "sideFromOffsetX": 0,
+                "sideTo": 7,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 5,
+                "costumeType": "005_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 2,
+                "sideFrom": 4,
+                "sideFromOffsetX": 0,
+                "sideTo": 4,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 1,
+                "costumeType": "001_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 1,
+                "costumeType": "",
+                "motionName": "smile01",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 1,
+                "costumeType": "",
+                "motionName": "nf03",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 3,
+                "sideFrom": 4,
+                "sideFromOffsetX": 0,
+                "sideTo": 4,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 1,
+                "costumeType": "001_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 2,
+                "sideFrom": 4,
+                "sideFromOffsetX": 0,
+                "sideTo": 4,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 3,
+                "costumeType": "003_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 3,
+                "costumeType": "",
+                "motionName": "nf04",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 3,
+                "costumeType": "",
+                "motionName": "nf02",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 3,
+                "sideFrom": 4,
+                "sideFromOffsetX": 0,
+                "sideTo": 4,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 3,
+                "costumeType": "003_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 2,
+                "sideFrom": 4,
+                "sideFromOffsetX": 0,
+                "sideTo": 4,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 1,
+                "costumeType": "001_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 1,
+                "costumeType": "",
+                "motionName": "smile01",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 3,
+                "sideFrom": 4,
+                "sideFromOffsetX": 0,
+                "sideTo": 4,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 1,
+                "costumeType": "001_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 2,
+                "sideFrom": 4,
+                "sideFromOffsetX": 0,
+                "sideTo": 4,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 2,
+                "costumeType": "002_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 1,
+                "sideFrom": 0,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 2,
+                "costumeType": "002_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 2,
+                "sideFrom": 7,
+                "sideFromOffsetX": 0,
+                "sideTo": 7,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 1,
+                "costumeType": "001_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 3,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 2,
+                "costumeType": "002_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 3,
+                "sideFrom": 7,
+                "sideFromOffsetX": 0,
+                "sideTo": 7,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 1,
+                "costumeType": "001_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 2,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 13,
+                "costumeType": "013_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 2,
+                "sideFrom": 7,
+                "sideFromOffsetX": 0,
+                "sideTo": 7,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 15,
+                "costumeType": "015_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 13,
+                "costumeType": "",
+                "motionName": "kime01",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 15,
+                "costumeType": "",
+                "motionName": "nf03",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 3,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 13,
+                "costumeType": "013_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 3,
+                "sideFrom": 7,
+                "sideFromOffsetX": 0,
+                "sideTo": 7,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 15,
+                "costumeType": "015_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 2,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 2,
+                "costumeType": "002_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 2,
+                "sideFrom": 7,
+                "sideFromOffsetX": 0,
+                "sideTo": 7,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 1,
+                "costumeType": "001_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 1,
+                "costumeType": "",
+                "motionName": "nf05",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 1,
+                "costumeType": "",
+                "motionName": "gattsu01",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 3,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 2,
+                "costumeType": "002_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 3,
+                "sideFrom": 7,
+                "sideFromOffsetX": 0,
+                "sideTo": 7,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 1,
+                "costumeType": "001_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 1,
+                "costumeType": "",
+                "motionName": "idle01",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 2,
+                "costumeType": "",
+                "motionName": "idle01",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 3,
+                "costumeType": "",
+                "motionName": "idle01",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 4,
+                "costumeType": "",
+                "motionName": "idle01",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 5,
+                "costumeType": "",
+                "motionName": "idle01",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 13,
+                "costumeType": "",
+                "motionName": "idle01",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 20,
+                "costumeType": "",
+                "motionName": "idle01",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 2,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 1,
+                "costumeType": "001_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 2,
+                "sideFrom": 7,
+                "sideFromOffsetX": 0,
+                "sideTo": 7,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 13,
+                "costumeType": "013_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 1,
+                "costumeType": "",
+                "motionName": "gattsu01",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 13,
+                "costumeType": "",
+                "motionName": "nf03",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 3,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 1,
+                "costumeType": "001_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 3,
+                "sideFrom": 7,
+                "sideFromOffsetX": 0,
+                "sideTo": 7,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 13,
+                "costumeType": "013_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 2,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 1,
+                "costumeType": "001_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 2,
+                "sideFrom": 7,
+                "sideFromOffsetX": 0,
+                "sideTo": 7,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 13,
+                "costumeType": "013_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 1,
+                "costumeType": "",
+                "motionName": "idle01",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 13,
+                "costumeType": "",
+                "motionName": "idle01",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 1,
+                "costumeType": "",
+                "motionName": "smile03",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 1,
+                "costumeType": "",
+                "motionName": "sleep01",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 1,
+                "costumeType": "",
+                "motionName": "surprised01",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 13,
+                "costumeType": "",
+                "motionName": "smile02",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 13,
+                "costumeType": "",
+                "motionName": "smile01",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 3,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 1,
+                "costumeType": "001_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 3,
+                "sideFrom": 7,
+                "sideFromOffsetX": 0,
+                "sideTo": 7,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 13,
+                "costumeType": "013_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 2,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 5,
+                "costumeType": "005_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 5,
+                "costumeType": "",
+                "motionName": "smile03",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 2,
+                "sideFrom": 7,
+                "sideFromOffsetX": 0,
+                "sideTo": 7,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 4,
+                "costumeType": "004_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 4,
+                "costumeType": "",
+                "motionName": "serious01",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 3,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 5,
+                "costumeType": "005_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 3,
+                "sideFrom": 7,
+                "sideFromOffsetX": 0,
+                "sideTo": 7,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 4,
+                "costumeType": "004_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 2,
+                "sideFrom": 4,
+                "sideFromOffsetX": 0,
+                "sideTo": 4,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 3,
+                "costumeType": "003_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 3,
+                "sideFrom": 4,
+                "sideFromOffsetX": 0,
+                "sideTo": 4,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 3,
+                "costumeType": "003_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 2,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 5,
+                "costumeType": "005_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 2,
+                "sideFrom": 7,
+                "sideFromOffsetX": 0,
+                "sideTo": 7,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 4,
+                "costumeType": "004_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 3,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 5,
+                "costumeType": "005_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 3,
+                "sideFrom": 7,
+                "sideFromOffsetX": 0,
+                "sideTo": 7,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 4,
+                "costumeType": "004_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 2,
+                "sideFrom": 4,
+                "sideFromOffsetX": 0,
+                "sideTo": 4,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 13,
+                "costumeType": "013_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 13,
+                "costumeType": "",
+                "motionName": "smile01",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 3,
+                "sideFrom": 4,
+                "sideFromOffsetX": 0,
+                "sideTo": 4,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 13,
+                "costumeType": "013_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 2,
+                "sideFrom": 4,
+                "sideFromOffsetX": 0,
+                "sideTo": 4,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 4,
+                "costumeType": "004_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 3,
+                "sideFrom": 4,
+                "sideFromOffsetX": 0,
+                "sideTo": 4,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 4,
+                "costumeType": "004_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 2,
+                "sideFrom": 4,
+                "sideFromOffsetX": 0,
+                "sideTo": 4,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 11,
+                "costumeType": "011_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 11,
+                "costumeType": "",
+                "motionName": "nf02",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 3,
+                "sideFrom": 4,
+                "sideFromOffsetX": 0,
+                "sideTo": 4,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 11,
+                "costumeType": "011_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 1,
+                "costumeType": "",
+                "motionName": "idle01",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 11,
+                "costumeType": "",
+                "motionName": "idle01",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 2,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 1,
+                "costumeType": "001_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 2,
+                "sideFrom": 7,
+                "sideFromOffsetX": 0,
+                "sideTo": 7,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 11,
+                "costumeType": "011_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 1,
+                "costumeType": "",
+                "motionName": "nf03",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 1,
+                "costumeType": "",
+                "motionName": "smile02",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 1,
+                "costumeType": "",
+                "motionName": "serious01",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 11,
+                "costumeType": "",
+                "motionName": "smile01",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 11,
+                "costumeType": "",
+                "motionName": "nf02",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 11,
+                "costumeType": "",
+                "motionName": "kime01",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 11,
+                "costumeType": "",
+                "motionName": "oowarai01",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 11,
+                "costumeType": "",
+                "motionName": "nf05",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 3,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 1,
+                "costumeType": "",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 3,
+                "sideFrom": 7,
+                "sideFromOffsetX": 0,
+                "sideTo": 7,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 11,
+                "costumeType": "",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 2,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 2,
+                "costumeType": "002_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 2,
+                "sideFrom": 7,
+                "sideFromOffsetX": 0,
+                "sideTo": 7,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 20,
+                "costumeType": "020_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 0,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 20,
+                "costumeType": "",
+                "motionName": "gattsu01",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 3,
+                "sideFrom": 3,
+                "sideFromOffsetX": 0,
+                "sideTo": 3,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 2,
+                "costumeType": "",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 3,
+                "sideFrom": 7,
+                "sideFromOffsetX": 0,
+                "sideTo": 7,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 20,
+                "costumeType": "",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 2,
+                "sideFrom": 4,
+                "sideFromOffsetX": 0,
+                "sideTo": 4,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 5,
+                "costumeType": "005_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 3,
+                "sideFrom": 4,
+                "sideFromOffsetX": 0,
+                "sideTo": 4,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 5,
+                "costumeType": "005_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 2,
+                "sideFrom": 4,
+                "sideFromOffsetX": 0,
+                "sideTo": 4,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 11,
+                "costumeType": "011_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 3,
+                "sideFrom": 4,
+                "sideFromOffsetX": 0,
+                "sideTo": 4,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 11,
+                "costumeType": "011_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            },
+            {
+                "type": 2,
+                "sideFrom": 4,
+                "sideFromOffsetX": 0,
+                "sideTo": 4,
+                "sideToOffsetX": 0,
+                "depthType": 0,
+                "characterId": 3,
+                "costumeType": "003_school_winter",
+                "motionName": "",
+                "expressionName": "",
+                "moveSpeedType": 0
+            }
+        ],
+        "specialEffectData": [
+            {
+                "effectType": 8,
+                "stringVal": "赏花会当天",
+                "stringValSub": "",
+                "duration": 0,
+                "animationTriggerName": ""
+            },
+            {
+                "effectType": 2,
+                "stringVal": "",
+                "stringValSub": "",
+                "duration": 0.5,
+                "animationTriggerName": ""
+            },
+            {
+                "effectType": 7,
+                "stringVal": "bg/scenario8",
+                "stringValSub": "bg00086",
+                "duration": 0,
+                "animationTriggerName": ""
+            },
+            {
+                "effectType": 1,
+                "stringVal": "",
+                "stringValSub": "",
+                "duration": 0.5,
+                "animationTriggerName": ""
+            },
+            {
+                "effectType": 2,
+                "stringVal": "",
+                "stringValSub": "",
+                "duration": 0.5,
+                "animationTriggerName": ""
+            },
+            {
+                "effectType": 7,
+                "stringVal": "bg/scenario4",
+                "stringValSub": "bg00043",
+                "duration": 0,
+                "animationTriggerName": ""
+            },
+            {
+                "effectType": 1,
+                "stringVal": "",
+                "stringValSub": "",
+                "duration": 0.5,
+                "animationTriggerName": ""
+            },
+            {
+                "effectType": 2,
+                "stringVal": "",
+                "stringValSub": "",
+                "duration": 0.5,
+                "animationTriggerName": ""
+            },
+            {
+                "effectType": 7,
+                "stringVal": "bg/scenario8",
+                "stringValSub": "bg00085",
+                "duration": 0,
+                "animationTriggerName": ""
+            },
+            {
+                "effectType": 1,
+                "stringVal": "",
+                "stringValSub": "",
+                "duration": 0.5,
+                "animationTriggerName": ""
+            },
+            {
+                "effectType": 8,
+                "stringVal": "弦卷家",
+                "stringValSub": "",
+                "duration": 0,
+                "animationTriggerName": ""
+            }
+        ],
+        "soundData": [
+            {
+                "playMode": 0,
+                "bgm": "",
+                "se": "SE_DOOR_B_OPEN",
+                "volume": 1,
+                "seBundleName": "",
+                "duration": 0
+            }
+        ],
+        "needBundleNames": [],
+        "includeSoundDataBundleNames": []
+    }
+}

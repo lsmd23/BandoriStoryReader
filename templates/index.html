@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BanG Dream! 故事阅读器</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        .story-container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .language-select {
+            max-width: 200px;
+        }
+        .story-title {
+            color: #ff69b4;
+            margin-bottom: 15px;
+        }
+        .story-synopsis {
+            border-left: 4px solid #ff69b4;
+            padding-left: 15px;
+            margin: 10px 0;
+        }
+        .sub-lang {
+            color: #666;
+            font-style: italic;
+        }
+        .dialogue {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .dialogue img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+        .dialogue .text {
+            flex: 1;
+        }
+        .centered-text {
+            text-align: center;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mb-4">BanG Dream! 故事阅读器</h1>
+        
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <label class="form-label">主语言:</label>
+                <select id="mainLang" class="form-select language-select">
+                    {% for id, name in languages.items() %}
+                    <option value="{{ id }}" {% if id == 3 %}selected{% endif %}>{{ name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">副语言 (可选):</label>
+                <select id="subLang" class="form-select language-select">
+                    <option value="">无</option>
+                    {% for id, name in languages.items() %}
+                    <option value="{{ id }}">{{ name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
+
+        <div class="mb-4">
+            <label class="form-label">活动:</label>
+            <select id="eventSelect" class="form-select">
+                <option value="">选择一个活动...</option>
+            </select>
+        </div>
+
+        <div id="storyContent" class="story-container d-none">
+            <!-- Story content will be inserted here -->
+        </div>
+    </div>
+
+    <script>
+        function updateEvents() {
+            const mainLang = document.getElementById('mainLang').value;
+            fetch(`/get_events?main_lang=${mainLang}`)
+                .then(response => response.json())
+                .then(events => {
+                    const select = document.getElementById('eventSelect');
+                    select.innerHTML = '<option value="">选择一个活动...</option>';
+                    events.forEach(event => {
+                        select.innerHTML += `<option value="${event.id}">${event.id} - ${event.name}</option>`;
+                    });
+                });
+        }
+
+        function updateStory() {
+            const eventId = document.getElementById('eventSelect').value;
+            if (!eventId) {
+                document.getElementById('storyContent').classList.add('d-none');
+                return;
+            }
+
+            const mainLang = document.getElementById('mainLang').value;
+            const subLang = document.getElementById('subLang').value;
+            const url = `/get_story?event_id=${eventId}&main_lang=${mainLang}${subLang ? `&sub_lang=${subLang}` : ''}`;
+
+            fetch(url)
+                .then(response => response.json())
+                .then(stories => {
+                    const container = document.getElementById('storyContent');
+                    container.innerHTML = '';
+                    container.classList.remove('d-none');
+
+                    stories.forEach((story, index) => {
+                        const dialoguesHtml = story.dialogues.map(dialogue => `
+                            <div class="dialogue">
+                                ${dialogue.icon ? `<img src="${dialogue.icon}" alt="${dialogue.speaker}">` : '<div style="width: 40px; height: 40px; margin-right: 10px;"></div>'}
+                                <div class="text">
+                                    <strong>${dialogue.speaker}</strong><br>
+                                    ${dialogue.text}
+                                </div>
+                            </div>
+                        `).join('');
+
+                        const storyHtml = `
+                            <div class="mb-4">
+                                <h3 class="story-title">${story.caption} - ${story.title}</h3>
+                                ${story.sub_caption ? `
+                                    <h4 class="sub-lang">${story.sub_caption} - ${story.sub_title}</h4>
+                                ` : ''}
+                                <div class="story-synopsis">
+                                    <p>${story.synopsis}</p>
+                                    ${story.sub_synopsis ? `
+                                        <p class="sub-lang">${story.sub_synopsis}</p>
+                                    ` : ''}
+                                </div>
+                                ${dialoguesHtml}
+                                ${index < stories.length - 1 ? '<hr>' : ''}
+                            </div>
+                        `;
+                        container.innerHTML += storyHtml;
+                    });
+                });
+        }
+
+        document.getElementById('mainLang').addEventListener('change', updateEvents);
+        document.getElementById('eventSelect').addEventListener('change', updateStory);
+        document.getElementById('subLang').addEventListener('change', updateStory);
+
+        // Initial load
+        updateEvents();
+    </script>
+</body>
+</html>

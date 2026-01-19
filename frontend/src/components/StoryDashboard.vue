@@ -2,6 +2,8 @@
 import { ref, onMounted } from 'vue';
 import { fetchCategory, searchService, bands } from '../services/mockData';
 import GlobalSearch from './GlobalSearch.vue';
+import LanguageSelector from './LanguageSelector.vue';
+import '../assets/long-list-styles.css'; // 引入新的长条形列表样式
 
 // 状态管理
 const currentTab = ref('events'); // 默认显示活动剧情
@@ -12,12 +14,16 @@ const isSearching = ref(false);
 const eventStories = ref([]);
 const mainStories = ref([]);
 const bandStories = ref([]);
+const cardStories = ref([]);
+const otherStories = ref([]);
 
 // 初始加载数据
 onMounted(async () => {
   eventStories.value = await fetchCategory('eventStories');
   mainStories.value = await fetchCategory('mainStories');
   bandStories.value = await fetchCategory('bandStories');
+  cardStories.value = await fetchCategory('cardStories');
+  otherStories.value = await fetchCategory('otherStories');
 });
 
 // 处理全局搜索
@@ -43,6 +49,9 @@ const getBandName = (id) => bands.find(b => b.id === id)?.name || 'Unknown Band'
     <!-- 顶部全域搜索区 -->
     <header class="dashboard-header">
       <GlobalSearch @search="performSearch" />
+      <div class="lang-select-container">
+        <LanguageSelector />
+      </div>
     </header>
 
     <!-- 主导航 Tab -->
@@ -108,33 +117,76 @@ const getBandName = (id) => bands.find(b => b.id === id)?.name || 'Unknown Band'
         </div>
       </div>
 
-      <!-- 2. 主线剧情视图 -->
-      <div v-else-if="currentTab === 'main'" class="list-view">
-         <div v-for="season in mainStories" :key="season.id" class="season-block">
-             <h2>{{ season.title }}</h2>
-             <div class="chapter-list">
-                 <div v-for="chap in season.chapters" :key="chap.id" class="chapter-item">
-                     📂 {{ chap.title }} ({{ chap.episodes.length }} 话)
+      <!-- 2. 主线剧情视图 - 长条形列表 -->
+      <div v-else-if="currentTab === 'main'" class="list-view-container">
+         <div v-for="season in mainStories" :key="season.id" class="season-group">
+             <h2 class="section-title">{{ season.title }}</h2>
+             <div class="story-strip-list">
+                 <div v-for="chap in season.chapters" :key="chap.id" class="story-strip">
+                     <div class="strip-content">
+                         <div class="strip-header">
+                            <h4>{{ chap.title }}</h4>
+                            <span class="strip-badge">{{ chap.episodes.length }} 话</span>
+                         </div>
+                         <p class="strip-desc">Main Story Chapter</p>
+                     </div>
+                     <button class="action-btn">Read</button>
                  </div>
              </div>
          </div>
       </div>
 
-      <!-- 3. 乐队剧情视图 -->
-      <div v-else-if="currentTab === 'band'" class="band-view">
-          <div v-for="bandStory in bandStories" :key="bandStory.bandId" class="band-section">
-              <h3 class="band-title">{{ getBandName(bandStory.bandId) }}</h3>
-              <div class="chapter-chips">
-                  <span v-for="chap in bandStory.chapters" :key="chap.id" class="chip">
-                      {{ chap.title }}
-                  </span>
+      <!-- 3. 乐队剧情视图 - 按乐队分组的组件 -->
+      <div v-else-if="currentTab === 'band'" class="list-view-container">
+          <div v-for="bandStory in bandStories" :key="bandStory.bandId" class="band-group-component">
+              <div class="band-header">
+                  <div class="band-logo-placeholder">{{ getBandName(bandStory.bandId)[0] }}</div>
+                  <h3>{{ getBandName(bandStory.bandId) }}</h3>
+              </div>
+              
+              <div class="story-strip-list">
+                  <div v-for="chap in bandStory.chapters" :key="chap.id" class="story-strip band-strip">
+                      <div class="strip-content">
+                          <h4>{{ chap.title }}</h4>
+                          <div class="meta-info">
+                            <span class="strip-badge">{{ chap.episodes.length }} 话</span>
+                          </div>
+                      </div>
+                      <button class="action-btn">Read</button>
+                  </div>
               </div>
           </div>
       </div>
 
-      <!-- 其他占位 -->
-      <div v-else class="placeholder-view">
-          <p>该板块正在施工中...</p>
+      <!-- 4. 卡面剧情视图 - 改为网格布局 (复用 event-card 样式) -->
+      <div v-else-if="currentTab === 'card'" class="grid-view">
+          <div v-for="card in cardStories" :key="card.cardId" class="story-card event-card">
+              <!-- 下一步：接入真实头像 -->
+              <div class="card-cover-placeholder">
+                 <small>ID: {{ card.characterId }}</small>
+              </div>
+              <div class="card-info">
+                  <h3>{{ card.title }}</h3>
+                  <span class="badge">{{ card.episodes.length }} 话</span>
+              </div>
+          </div>
+      </div>
+
+      <!-- 5. 小对话视图 - 长条形列表 -->
+      <div v-else-if="currentTab === 'other'" class="list-view-container">
+          <div class="story-strip-list">
+              <div v-for="story in otherStories" :key="story.id" class="story-strip">
+                  <div class="strip-content">
+                      <div class="strip-header">
+                        <h4>{{ story.title }}</h4>
+                        <span class="strip-badge">{{ story.type }}</span>
+                      </div>
+                      <p class="strip-desc">{{ story.preview }}</p>
+                      <small class="mini-meta">Characters: {{ story.characters.join(', ') }}</small>
+                  </div>
+                  <button class="action-btn">View</button>
+              </div>
+          </div>
       </div>
 
     </main>
@@ -148,6 +200,14 @@ const getBandName = (id) => bands.find(b => b.id === id)?.name || 'Unknown Band'
 
 .dashboard-header {
   margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.lang-select-container {
+    display: flex;
+    justify-content: center;
 }
 
 /* 导航栏样式 */

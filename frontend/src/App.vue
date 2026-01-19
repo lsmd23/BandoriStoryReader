@@ -6,7 +6,7 @@ import StoryDashboard from './components/StoryDashboard.vue';
   <div class="app-background">
     <div class="container">
       <div class="header-branding">
-        <img src="https://bang-dream.com/img/footer-logo.png" alt="Bandori Logo" class="brand-logo" />
+        <img src="https://bang-dream.bushimo.jp/wordpress/wp-content/themes/bang-dream_gbp_v2/assets/images/common/logo.png" alt="GBP Logo" class="brand-logo" />
         <h1 class="brand-title">Story Reader</h1>
       </div>
       
@@ -20,10 +20,10 @@ import StoryDashboard from './components/StoryDashboard.vue';
 
 <style scoped>
 .app-background {
-  min-height: 100vh;
+  height: 100vh; /* 锁定高度，防止内容撑开导致背景重新计算 */
   width: 100vw;
   /* 使用 fixed 定位或 min-height 确保覆盖全屏 */
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   
@@ -62,7 +62,7 @@ import StoryDashboard from './components/StoryDashboard.vue';
 }
 
 .brand-logo {
-  height: 40px;
+  height: 64px;
   width: auto;
   object-fit: contain;
 }

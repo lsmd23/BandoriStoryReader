@@ -1,0 +1,173 @@
+.list-view-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.section-title {
+    color: #444;
+    border-left: 5px solid #E91E63;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+/* 通用长条形组件样式 */
+.story-strip {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #eee;
+    transition: all 0.2s;
+}
+
+.story-strip:hover {
+    border-color: #E91E63;
+    box-shadow: 0 4px 12px rgba(233, 30, 99, 0.1);
+    transform: translateX(5px);
+}
+
+.strip-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.strip-content {
+    flex: 1;
+}
+
+.strip-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.strip-content h4 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.strip-desc {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.strip-badge {
+    background: #ffeeef;
+    color: #E91E63;
+    font-size: 0.75rem;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.strip-badge.is-secondary {
+    background: #e3f2fd;
+    color: #2196f3;
+}
+
+.action-btn {
+    padding: 8px 20px;
+    border: 1px solid #E91E63;
+    color: #E91E63;
+    background: transparent;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.action-btn:hover {
+    background: #E91E63;
+    color: white;
+}
+
+/* 乐队组件单独样式 */
+.band-group-component {
+    background: #fffafa;
+    /* 淡粉色背景区分乐队块 */
+    border-radius: 16px;
+    padding: 20px;
+    border: 1px solid #ffeef2;
+}
+
+.band-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgba(233, 30, 99, 0.1);
+    padding-bottom: 10px;
+}
+
+.band-logo-placeholder {
+    width: 40px;
+    height: 40px;
+    background: #333;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.band-header h3 {
+    margin: 0;
+    color: #333;
+}
+
+.band-strip {
+    border-left: 4px solid #ddd;
+}
+
+.band-strip:hover {
+    border-left-color: #E91E63;
+}
+
+/* 卡面组件单独样式 */
+.card-strip {
+    height: 80px;
+}
+
+.card-thumbnail-placeholder {
+    width: 60px;
+    height: 60px;
+    background: #E0E0E0;
+    border-radius: 4px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    font-size: 0.8rem;
+}
+
+.char-name {
+    display: block;
+    font-size: 0.8rem;
+    color: #999;
+    margin-bottom: 2px;
+}
+
+/* С�Ի����������ʽ */
+
+
+.mini-meta {
+    display: block;
+    margin-top: 4px;
+    font-size: 0.8rem;
+    color: #aaa;
+}

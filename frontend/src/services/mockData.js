@@ -1,16 +1,7 @@
-// 模拟后端数据结构，反映 Bang Dream 的剧情分类
+import { bands } from './bands';
 
 // 0. 基础定义：角色与乐队
-export const bands = [
-    { id: 1, name: "Poppin'Party", members: [1, 2, 3, 4, 5] },
-    { id: 2, name: "Afterglow", members: [6, 7, 8, 9, 10] },
-    { id: 3, name: "Pastel*Palettes", members: [11, 12, 13, 14, 15] },
-    { id: 4, name: "Roselia", members: [16, 17, 18, 19, 20] },
-    { id: 5, name: "Hello, Happy World!", members: [21, 22, 23, 24, 25] },
-    { id: 21, name: "Morfonica", members: [26, 27, 28, 29, 30] },
-    { id: 18, name: "RAISE A SUILEN", members: [31, 32, 33, 34, 35] },
-    { id: 45, name: "MyGO!!!!!", members: [36, 37, 38, 39, 40] }
-];
+export { bands };
 
 // 1. 剧情内容的最小单位：对话 (Dialogue)
 // 这是一个结构示例，实际数据可能非常多

@@ -1,6 +1,8 @@
 <script setup>
 import { ref, onMounted, computed, reactive } from 'vue';
-import { fetchCategory, searchService, bands } from '../services/mockData';
+import { fetchCategory, searchService } from '../services/mockData';
+import { bands, getBandStyle, getBandIconUrl } from '../services/bands'; // 引入静态配置
+import { resolveText } from '../utils/i18n';
 import GlobalSearch from './GlobalSearch.vue';
 import LanguageSelector from './LanguageSelector.vue';
 import '../assets/long-list-styles.css'; // 引入新的长条形列表样式
@@ -11,20 +13,8 @@ const searchResults = ref(null);
 const isSearching = ref(false);
 const currentLanguage = ref('cn'); // 默认语言: 简体中文
 
-// 乐队配置 (按用户要求)
-const bandConfig = {
-    1: { color: '#FF3377', iconId: 1 }, // Poppin'Party
-    2: { color: '#EE3344', iconId: 2 }, // Afterglow
-    3: { color: 'linear-gradient(45deg, #33DDAA, #DDFFEE)', iconId: 4 }, // Pastel*Palettes (Using user's ID 4 mapping)
-    4: { color: '#3344AA', iconId: 5 }, // Roselia (Using standard ID 5 for icon resource based on context, mapped from Mock ID 4)
-    5: { color: '#FFDD00', iconId: 3 }, // Hello, Happy World! (Using ID 3 for icon)
-    21: { color: 'linear-gradient(45deg, #33AAFF, #D1ECFF)', iconId: 21 }, // Morfonica (Mock ID 21 -> User ID 7)
-    18: { color: 'linear-gradient(45deg, #33CCCC, #8844DD, #CFF6F6)', iconId: 18 }, // RAS (Mock ID 18 -> User ID 6)
-    45: { color: '#3388BB', iconId: 45 }, // MyGO!!!!! (Mock ID 45 -> User ID 8)
-};
-
-// 显示顺序
-const bandOrder = [1, 2, 3, 4, 5, 21, 18, 45];
+// 显示顺序 - 基于 bands 数组的顺序
+const bandOrder = bands.map(b => b.id);
 
 // 模拟翻译字典
 const translations = {
@@ -65,21 +55,10 @@ const resetView = () => {
     searchResults.value = null;
 }
 
-const getBandName = (id) => bands.find(b => b.id === id)?.name || 'Unknown Band';
-
-// 样式与元数据获取
-const getBandStyle = (bandId) => {
-    const config = bandConfig[bandId];
-    if (!config) return { background: '#eee' };
-    return { background: config.color };
+const getBandName = (id) => {
+    const band = bands.find(b => b.id === id);
+    return band ? resolveText(band.name, currentLanguage.value) : 'Unknown Band';
 };
-
-const getBandIcon = (bandId) => {
-    const config = bandConfig[bandId];
-    // 默认 fallback 到 bandId 如果没有配置
-    const resId = config ? config.iconId : bandId; 
-    return `https://bestdori.com/res/icon/band_${resId}.svg`;
-}
 
 // 排序后的乐队剧情
 const sortedBandStories = computed(() => {
@@ -92,9 +71,14 @@ const sortedBandStories = computed(() => {
 });
 
 // 文本本地化处理
-const t = (text) => {
-    if (!translations[text]) return text;
-    return translations[text][currentLanguage.value] || text;
+const t = (key) => {
+    // 1. 如果是字典里的 Key，取出对象进行解析
+    if (translations[key]) {
+        return resolveText(translations[key], currentLanguage.value);
+    }
+    // 2. 如果传进来的直接是多语言对象，直接解析
+    // 3. 否则原样返回 (resolveText 内部处理字符串的情况)
+    return resolveText(key, currentLanguage.value);
 }
 
 </script>
@@ -200,7 +184,7 @@ const t = (text) => {
               <div class="band-header" :style="getBandStyle(bandStory.bandId)">
                   <!-- 3.3 图标资源替换 -->
                   <div class="band-logo-wrapper">
-                      <img :src="getBandIcon(bandStory.bandId)" class="band-icon-img" alt="logo" />
+                      <img :src="getBandIconUrl(bandStory.bandId)" class="band-icon-img" alt="logo" />
                   </div>
                   <h3>{{ getBandName(bandStory.bandId) }}</h3>
               </div>

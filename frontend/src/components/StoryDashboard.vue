@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, computed, reactive } from 'vue';
 import { fetchCategory, searchService, bands } from '../services/mockData';
 import GlobalSearch from './GlobalSearch.vue';
 import LanguageSelector from './LanguageSelector.vue';
@@ -9,6 +9,31 @@ import '../assets/long-list-styles.css'; // 引入新的长条形列表样式
 const currentTab = ref('events'); // 默认显示活动剧情
 const searchResults = ref(null);
 const isSearching = ref(false);
+const currentLanguage = ref('cn'); // 默认语言: 简体中文
+
+// 乐队配置 (按用户要求)
+const bandConfig = {
+    1: { color: '#FF3377', iconId: 1 }, // Poppin'Party
+    2: { color: '#EE3344', iconId: 2 }, // Afterglow
+    3: { color: 'linear-gradient(45deg, #33DDAA, #DDFFEE)', iconId: 4 }, // Pastel*Palettes (Using user's ID 4 mapping)
+    4: { color: '#3344AA', iconId: 5 }, // Roselia (Using standard ID 5 for icon resource based on context, mapped from Mock ID 4)
+    5: { color: '#FFDD00', iconId: 3 }, // Hello, Happy World! (Using ID 3 for icon)
+    21: { color: 'linear-gradient(45deg, #33AAFF, #D1ECFF)', iconId: 21 }, // Morfonica (Mock ID 21 -> User ID 7)
+    18: { color: 'linear-gradient(45deg, #33CCCC, #8844DD, #CFF6F6)', iconId: 18 }, // RAS (Mock ID 18 -> User ID 6)
+    45: { color: '#3388BB', iconId: 45 }, // MyGO!!!!! (Mock ID 45 -> User ID 8)
+};
+
+// 显示顺序
+const bandOrder = [1, 2, 3, 4, 5, 21, 18, 45];
+
+// 模拟翻译字典
+const translations = {
+    'SAKURA＊BLOOMING PARTY!': { jp: 'SAKURA＊BLOOMING PARTY!', cn: '樱花盛开的派对！', en: 'SAKURA＊BLOOMING PARTY!' },
+    '想い繋ぐ、未完成な歌': { jp: '想い繋ぐ、未完成な歌', cn: '连接思念，未完成的歌', en: 'Unfinished Song connecting feelings' },
+    'Opening': { jp: 'オープニング', cn: '开场', en: 'Opening' },
+    'Chapter 1': { jp: '第1章', cn: '第一章', en: 'Chapter 1' },
+    // 更多...
+};
 
 // 各类数据容器
 const eventStories = ref([]);
@@ -42,6 +67,36 @@ const resetView = () => {
 
 const getBandName = (id) => bands.find(b => b.id === id)?.name || 'Unknown Band';
 
+// 样式与元数据获取
+const getBandStyle = (bandId) => {
+    const config = bandConfig[bandId];
+    if (!config) return { background: '#eee' };
+    return { background: config.color };
+};
+
+const getBandIcon = (bandId) => {
+    const config = bandConfig[bandId];
+    // 默认 fallback 到 bandId 如果没有配置
+    const resId = config ? config.iconId : bandId; 
+    return `https://bestdori.com/res/icon/band_${resId}.svg`;
+}
+
+// 排序后的乐队剧情
+const sortedBandStories = computed(() => {
+    return [...bandStories.value].sort((a, b) => {
+        const idxA = bandOrder.indexOf(a.bandId);
+        const idxB = bandOrder.indexOf(b.bandId);
+        // 如果不在列表里，放到最后
+        return (idxA === -1 ? 999 : idxA) - (idxB === -1 ? 999 : idxB);
+    });
+});
+
+// 文本本地化处理
+const t = (text) => {
+    if (!translations[text]) return text;
+    return translations[text][currentLanguage.value] || text;
+}
+
 </script>
 
 <template>
@@ -50,7 +105,8 @@ const getBandName = (id) => bands.find(b => b.id === id)?.name || 'Unknown Band'
     <header class="dashboard-header">
       <GlobalSearch @search="performSearch" />
       <div class="lang-select-container">
-        <LanguageSelector />
+        <!-- 绑定 v-model -->
+        <LanguageSelector v-model="currentLanguage" />
       </div>
     </header>
 
@@ -99,7 +155,7 @@ const getBandName = (id) => bands.find(b => b.id === id)?.name || 'Unknown Band'
                     <small>来源: {{ res.source }}</small>
                 </div>
                 <div v-else class="std-result">
-                    <h4>{{ res.title }}</h4>
+                    <h4>{{ t(res.title) }}</h4>
                     <small>{{ res.match }}</small>
                 </div>
             </div>
@@ -111,7 +167,7 @@ const getBandName = (id) => bands.find(b => b.id === id)?.name || 'Unknown Band'
         <div v-for="story in eventStories" :key="story.id" class="story-card event-card">
             <div class="card-cover-placeholder">Banner</div>
             <div class="card-info">
-                <h3>{{ story.title }}</h3>
+                <h3>{{ t(story.title) }}</h3>
                 <span class="badge">{{ story.episodes.length }} 话</span>
             </div>
         </div>
@@ -120,12 +176,12 @@ const getBandName = (id) => bands.find(b => b.id === id)?.name || 'Unknown Band'
       <!-- 2. 主线剧情视图 - 长条形列表 -->
       <div v-else-if="currentTab === 'main'" class="list-view-container">
          <div v-for="season in mainStories" :key="season.id" class="season-group">
-             <h2 class="section-title">{{ season.title }}</h2>
+             <h2 class="section-title">{{ t(season.title) }}</h2>
              <div class="story-strip-list">
                  <div v-for="chap in season.chapters" :key="chap.id" class="story-strip">
                      <div class="strip-content">
                          <div class="strip-header">
-                            <h4>{{ chap.title }}</h4>
+                            <h4>{{ t(chap.title) }}</h4>
                             <span class="strip-badge">{{ chap.episodes.length }} 话</span>
                          </div>
                          <p class="strip-desc">Main Story Chapter</p>
@@ -138,18 +194,24 @@ const getBandName = (id) => bands.find(b => b.id === id)?.name || 'Unknown Band'
 
       <!-- 3. 乐队剧情视图 - 按乐队分组的组件 -->
       <div v-else-if="currentTab === 'band'" class="list-view-container">
-          <div v-for="bandStory in bandStories" :key="bandStory.bandId" class="band-group-component">
-              <div class="band-header">
-                  <div class="band-logo-placeholder">{{ getBandName(bandStory.bandId)[0] }}</div>
+          <!-- 3.1 遍历排序后的乐队数据 -->
+          <div v-for="bandStory in sortedBandStories" :key="bandStory.bandId" class="band-group-component">
+              <!-- 3.2 动态样式绑定 (背景色/渐变) -->
+              <div class="band-header" :style="getBandStyle(bandStory.bandId)">
+                  <!-- 3.3 图标资源替换 -->
+                  <div class="band-logo-wrapper">
+                      <img :src="getBandIcon(bandStory.bandId)" class="band-icon-img" alt="logo" />
+                  </div>
                   <h3>{{ getBandName(bandStory.bandId) }}</h3>
               </div>
               
               <div class="story-strip-list">
                   <div v-for="chap in bandStory.chapters" :key="chap.id" class="story-strip band-strip">
                       <div class="strip-content">
-                          <h4>{{ chap.title }}</h4>
+                          <h4>{{ t(chap.title) }}</h4>
                           <div class="meta-info">
-                            <span class="strip-badge">{{ chap.episodes.length }} 话</span>
+                             <!-- Show episode count even if 0 -->
+                            <span class="strip-badge">{{ chap.episodes ? chap.episodes.length : 0 }} 话</span>
                           </div>
                       </div>
                       <button class="action-btn">Read</button>
@@ -166,7 +228,7 @@ const getBandName = (id) => bands.find(b => b.id === id)?.name || 'Unknown Band'
                  <small>ID: {{ card.characterId }}</small>
               </div>
               <div class="card-info">
-                  <h3>{{ card.title }}</h3>
+                  <h3>{{ t(card.title) }}</h3>
                   <span class="badge">{{ card.episodes.length }} 话</span>
               </div>
           </div>
@@ -178,7 +240,7 @@ const getBandName = (id) => bands.find(b => b.id === id)?.name || 'Unknown Band'
               <div v-for="story in otherStories" :key="story.id" class="story-strip">
                   <div class="strip-content">
                       <div class="strip-header">
-                        <h4>{{ story.title }}</h4>
+                        <h4>{{ t(story.title) }}</h4>
                         <span class="strip-badge">{{ story.type }}</span>
                       </div>
                       <p class="strip-desc">{{ story.preview }}</p>
@@ -295,28 +357,53 @@ const getBandName = (id) => bands.find(b => b.id === id)?.name || 'Unknown Band'
   color: #666;
 }
 
-/* 乐队视图样式 */
-.band-section {
-    margin-bottom: 20px;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 15px;
+/* 乐队视图样式 - 更新 */
+.band-group-component {
+    margin-bottom: 40px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
-.band-title {
-    color: #E91E63;
-    margin-bottom: 10px;
-}
-.chapter-chips {
+
+.band-header {
+    height: 80px; /* 增加高度 */
     display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 30px;
+    color: white;
+    gap: 20px;
+    position: relative;
+    /* Background set dynamically */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
-.chip {
-    background: #fff;
-    border: 1px solid #E91E63;
-    color: #E91E63;
-    padding: 5px 10px;
-    border-radius: 15px;
-    font-size: 13px;
+
+.band-logo-wrapper {
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.band-icon-img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.band-header h3 {
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    margin: 0;
+}
+
+.story-strip-list {
+    padding: 20px;
 }
 
 /* 搜索结果样式 */

@@ -1,5 +1,8 @@
 <script setup>
-import { ref } from 'vue';
+import { ref, defineEmits, watch } from 'vue';
+
+const props = defineProps(['modelValue']);
+const emit = defineEmits(['update:modelValue']);
 
 const languages = [
   { code: 'cn', label: '简体中文' },
@@ -9,17 +12,15 @@ const languages = [
   { code: 'en', label: 'English' }
 ];
 
-const selectedLangs = ref(['cn', 'jp']); // Default selection example
+const selectedLang = ref(props.modelValue || 'cn');
 
-const toggleLang = (code) => {
-  if (selectedLangs.value.includes(code)) {
-    // Prevent unselecting the last one if you want at least one selected, 
-    // but user didn't specify. I'll allow deselecting all or keep one. 
-    // Let's allow simple toggle.
-    selectedLangs.value = selectedLangs.value.filter(l => l !== code);
-  } else {
-    selectedLangs.value.push(code);
-  }
+watch(() => props.modelValue, (newVal) => {
+  if (newVal) selectedLang.value = newVal;
+});
+
+const selectLang = (code) => {
+  selectedLang.value = code;
+  emit('update:modelValue', code);
 };
 </script>
 
@@ -29,8 +30,8 @@ const toggleLang = (code) => {
       v-for="lang in languages" 
       :key="lang.code"
       class="lang-option"
-      :class="{ active: selectedLangs.includes(lang.code) }"
-      @click="toggleLang(lang.code)"
+      :class="{ active: selectedLang === lang.code }"
+      @click="selectLang(lang.code)"
     >
       <img 
         :src="`https://bestdori.com/res/icon/${lang.code}.svg`" 

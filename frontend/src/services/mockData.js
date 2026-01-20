@@ -7,7 +7,9 @@ export const bands = [
     { id: 3, name: "Pastel*Palettes", members: [11, 12, 13, 14, 15] },
     { id: 4, name: "Roselia", members: [16, 17, 18, 19, 20] },
     { id: 5, name: "Hello, Happy World!", members: [21, 22, 23, 24, 25] },
-    // ... 其他乐队
+    { id: 21, name: "Morfonica", members: [26, 27, 28, 29, 30] },
+    { id: 18, name: "RAISE A SUILEN", members: [31, 32, 33, 34, 35] },
+    { id: 45, name: "MyGO!!!!!", members: [36, 37, 38, 39, 40] }
 ];
 
 // 1. 剧情内容的最小单位：对话 (Dialogue)
@@ -125,6 +127,16 @@ export const mockDatabase = {
             ]
         },
         {
+            bandId: 3, // Pastel*Palettes
+            chapters: [
+                {
+                    id: "band_pasupale_ch1",
+                    title: "Chapter 1: Pastel*Palettes, Shoots!",
+                    episodes: [{ id: "pp_1_1", title: "Agency" }, { id: "pp_1_2", title: "First Live Failure" }]
+                }
+            ]
+        },
+        {
             bandId: 4, // Roselia
             chapters: [
                 {
@@ -147,6 +159,24 @@ export const mockDatabase = {
                     title: "Chapter 1: Smiles for the World!",
                     episodes: [{ id: "hhw_1_1", title: "Hello!" }, { id: "hhw_1_2", title: "Happy!" }]
                 }
+            ]
+        },
+        {
+            bandId: 21, // Morfonica (Using standard ID)
+            chapters: [
+                { id: "band_morfn_ch1", title: "Fly with the night", episodes: [] }
+            ]
+        },
+        {
+            bandId: 18, // RAS (Using standard ID)
+            chapters: [
+                { id: "band_ras_ch1", title: "R·I·O·T", episodes: [] }
+            ]
+        },
+        {
+            bandId: 45, // MyGO (Using standard ID 45)
+            chapters: [
+                { id: "band_mygo_ch1", title: "It's MyGO!!!!!", episodes: [] }
             ]
         }
     ],

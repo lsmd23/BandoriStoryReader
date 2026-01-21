@@ -6,6 +6,7 @@ import { resolveText } from '../utils/i18n';
 import GlobalSearch from './GlobalSearch.vue';
 import LanguageSelector from './LanguageSelector.vue';
 import '../assets/long-list-styles.css'; // 引入新的长条形列表样式
+import '../assets/pagination.css'; // 引入分页样式
 
 // 状态管理
 const currentTab = ref('events'); // 默认显示活动剧情
@@ -18,10 +19,28 @@ const bandOrder = bands.map(b => b.id);
 
 // 模拟翻译字典
 const translations = {
-    'SAKURA＊BLOOMING PARTY!': { jp: 'SAKURA＊BLOOMING PARTY!', cn: '樱花盛开的派对！', en: 'SAKURA＊BLOOMING PARTY!' },
-    '想い繋ぐ、未完成な歌': { jp: '想い繋ぐ、未完成な歌', cn: '连接思念，未完成的歌', en: 'Unfinished Song connecting feelings' },
-    'Opening': { jp: 'オープニング', cn: '开场', en: 'Opening' },
-    'Chapter 1': { jp: '第1章', cn: '第一章', en: 'Chapter 1' },
+    // UI Label Translations
+    'ui_events': { cn: '活动剧情', tw: '活動劇情', jp: 'イベントストーリー', kr: '이벤트 스토리', en: 'Event Stories' },
+    'ui_main': { cn: '主线剧情', tw: '主線劇情', jp: 'メインストーリー', kr: '메인 스토리', en: 'Main Story' },
+    'ui_band': { cn: '乐队剧情', tw: '樂團劇情', jp: 'バンドストーリー', kr: '밴드 스토리', en: 'Band Stories' },
+    'ui_card': { cn: '卡面剧情', tw: '卡面劇情', jp: 'カードストーリー', kr: '카드 스토리', en: 'Card Stories' },
+    'ui_other': { cn: '小对话', tw: '小對話', jp: 'ミニ会話', kr: '미니 대화', en: 'Mini Interaction' },
+    'ui_search_results': { cn: '搜索结果', tw: '搜尋結果', jp: '検索結果', kr: '검색 결과', en: 'Search Results' },
+    'ui_back': { cn: '返回浏览模式', tw: '返回瀏覽模式', jp: 'ブラウズに戻る', kr: '찾아보기로 돌아가기', en: 'Back to Browse' },
+    'ui_searching': { cn: '搜索中...', tw: '搜尋中...', jp: '検索中...', kr: '검색 중...', en: 'Searching...' },
+    'ui_no_results': { cn: '无结果', tw: '無結果', jp: '結果なし', kr: '결과 없음', en: 'No Results' },
+    'ui_episodes': { cn: '话', tw: '話', jp: '話', kr: '화', en: 'Eps' },
+    'ui_read': { cn: '阅读', tw: '閱讀', jp: '読む', kr: '읽기', en: 'Read' },
+    'ui_view': { cn: '查看', tw: '查看', jp: '見る', kr: '보기', en: 'View' },
+    'ui_prev_page': { cn: '上一页', tw: '上一頁', jp: '前のページ', kr: '이전', en: 'Prev' },
+    'ui_next_page': { cn: '下一页', tw: '下一頁', jp: '次のページ', kr: '다음', en: 'Next' },
+    'ui_page_info': { cn: '第 {0} / {1} 页', tw: '第 {0} / {1} 頁', jp: '{0} / {1} ページ', kr: '{0} / {1} 페이지', en: 'Page {0} of {1}' },
+
+    // Existing Content Translations
+    'SAKURA＊BLOOMING PARTY!': { jp: 'SAKURA＊BLOOMING PARTY!', cn: '樱花盛开的派对！', tw: '櫻花盛開的派對！', kr: 'SAKURA＊BLOOMING PARTY!', en: 'SAKURA＊BLOOMING PARTY!' },
+    '想い繋ぐ、未完成な歌': { jp: '想い繋ぐ、未完成な歌', cn: '连接思念，未完成的歌', tw: '連結思念，未完成的歌', kr: '마음을 잇는, 미완성 노래', en: 'Unfinished Song connecting feelings' },
+    'Opening': { jp: 'オープニング', cn: '开场', tw: '開場', kr: '오프닝', en: 'Opening' },
+    'Chapter 1': { jp: '第1章', cn: '第一章', tw: '第一章', kr: '제 1장', en: 'Chapter 1' },
     // 更多...
 };
 
@@ -31,6 +50,16 @@ const mainStories = ref([]);
 const bandStories = ref([]);
 const cardStories = ref([]);
 const otherStories = ref([]);
+
+// 分页状态
+const pageSize = 20;
+const currentPage = ref(1);
+
+// 监听 Tab 切换，重置分页
+const switchTab = (tab) => {
+    currentTab.value = tab;
+    currentPage.value = 1;
+};
 
 // 初始加载数据
 onMounted(async () => {
@@ -52,6 +81,7 @@ const performSearch = async (query) => {
 // 重置（回到主页）
 const resetView = () => {
     currentTab.value = 'events';
+    currentPage.value = 1;
     searchResults.value = null;
 }
 
@@ -70,15 +100,65 @@ const sortedBandStories = computed(() => {
     });
 });
 
+// 通用分页逻辑
+const getPaginatedData = (data) => {
+    const start = (currentPage.value - 1) * pageSize;
+    const end = start + pageSize;
+    return data.slice(start, end);
+};
+
+const currentDisplayData = computed(() => {
+    if (currentTab.value === 'events') return eventStories.value;
+    if (currentTab.value === 'card') return cardStories.value;
+    return []; // 其他 Tab 暂时不分页或自有逻辑
+});
+
+const totalPages = computed(() => {
+    const total = currentDisplayData.value.length;
+    return Math.ceil(total / pageSize) || 1;
+});
+
+const paginatedList = computed(() => {
+    if (currentTab.value === 'events' || currentTab.value === 'card') {
+        return getPaginatedData(currentDisplayData.value);
+    }
+    return [];
+});
+
+const nextPage = () => {
+    if (currentPage.value < totalPages.value) {
+        currentPage.value++;
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+};
+
+const prevPage = () => {
+    if (currentPage.value > 1) {
+        currentPage.value--;
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+};
+
+
 // 文本本地化处理
-const t = (key) => {
+const t = (key, ...args) => {
+    let result = key;
     // 1. 如果是字典里的 Key，取出对象进行解析
     if (translations[key]) {
-        return resolveText(translations[key], currentLanguage.value);
+        result = resolveText(translations[key], currentLanguage.value);
     }
     // 2. 如果传进来的直接是多语言对象，直接解析
-    // 3. 否则原样返回 (resolveText 内部处理字符串的情况)
-    return resolveText(key, currentLanguage.value);
+    else {
+        result = resolveText(key, currentLanguage.value);
+    }
+
+    // 简单格式化占位符 {0}, {1}
+    if (args.length > 0) {
+        args.forEach((arg, index) => {
+            result = result.replace(`{${index}}`, arg);
+        });
+    }
+    return result;
 }
 
 </script>
@@ -98,29 +178,29 @@ const t = (key) => {
     <nav class="category-nav" v-if="currentTab !== 'search_results'">
       <button 
         :class="{ active: currentTab === 'events' }" 
-        @click="currentTab = 'events'"
-      >活动剧情</button>
+        @click="switchTab('events')"
+      >{{ t('ui_events') }}</button>
       <button 
         :class="{ active: currentTab === 'main' }" 
-        @click="currentTab = 'main'"
-      >主线剧情</button>
+        @click="switchTab('main')"
+      >{{ t('ui_main') }}</button>
       <button 
         :class="{ active: currentTab === 'band' }" 
-        @click="currentTab = 'band'"
-      >乐队剧情</button>
+        @click="switchTab('band')"
+      >{{ t('ui_band') }}</button>
       <button 
         :class="{ active: currentTab === 'card' }" 
-        @click="currentTab = 'card'"
-      >卡面剧情</button>
+        @click="switchTab('card')"
+      >{{ t('ui_card') }}</button>
       <button 
         :class="{ active: currentTab === 'other' }" 
-        @click="currentTab = 'other'"
-      >小对话</button>
+        @click="switchTab('other')"
+      >{{ t('ui_other') }}</button>
     </nav>
 
     <div v-if="currentTab === 'search_results'" class="back-nav">
-        <button @click="resetView">← 返回浏览模式</button>
-        <h2>搜索结果</h2>
+        <button @click="resetView">← {{ t('ui_back') }}</button>
+        <h2>{{ t('ui_search_results') }}</h2>
     </div>
 
     <!-- 内容展示区 -->
@@ -128,8 +208,8 @@ const t = (key) => {
       
       <!-- 搜索结果视图 -->
       <div v-if="currentTab === 'search_results'" class="results-view">
-        <div v-if="isSearching" class="loading">搜索中...</div>
-        <div v-else-if="!searchResults || searchResults.length === 0" class="empty">无结果</div>
+        <div v-if="isSearching" class="loading">{{ t('ui_searching') }}</div>
+        <div v-else-if="!searchResults || searchResults.length === 0" class="empty">{{ t('ui_no_results') }}</div>
         <div v-else class="result-list">
             <div v-for="(res, idx) in searchResults" :key="idx" class="result-card">
                 <div class="tag">{{ res.type }}</div>
@@ -146,14 +226,22 @@ const t = (key) => {
         </div>
       </div>
 
-      <!-- 1. 活动剧情视图 -->
-      <div v-else-if="currentTab === 'events'" class="grid-view">
-        <div v-for="story in eventStories" :key="story.id" class="story-card event-card">
-            <div class="card-cover-placeholder">Banner</div>
-            <div class="card-info">
-                <h3>{{ t(story.title) }}</h3>
-                <span class="badge">{{ story.episodes.length }} 话</span>
+      <!-- 1. 活动剧情视图 (分页) -->
+      <div v-else-if="currentTab === 'events'" class="grid-view-container">
+        <div class="grid-view">
+            <div v-for="story in paginatedList" :key="story.id" class="story-card event-card">
+                <div class="card-cover-placeholder" loading="lazy">Banner</div>
+                <div class="card-info">
+                    <h3>{{ t(story.title) }}</h3>
+                    <span class="badge">{{ story.episodes.length }} {{ t('ui_episodes') }}</span>
+                </div>
             </div>
+        </div>
+        <!-- Pagination Controls -->
+        <div class="pagination-controls" v-if="totalPages > 1">
+            <button @click="prevPage" :disabled="currentPage === 1">{{ t('ui_prev_page') }}</button>
+            <span>{{ t('ui_page_info', currentPage, totalPages) }}</span>
+            <button @click="nextPage" :disabled="currentPage === totalPages">{{ t('ui_next_page') }}</button>
         </div>
       </div>
 
@@ -166,11 +254,11 @@ const t = (key) => {
                      <div class="strip-content">
                          <div class="strip-header">
                             <h4>{{ t(chap.title) }}</h4>
-                            <span class="strip-badge">{{ chap.episodes.length }} 话</span>
+                            <span class="strip-badge">{{ chap.episodes.length }} {{ t('ui_episodes') }}</span>
                          </div>
                          <p class="strip-desc">Main Story Chapter</p>
                      </div>
-                     <button class="action-btn">Read</button>
+                     <button class="action-btn">{{ t('ui_read') }}</button>
                  </div>
              </div>
          </div>
@@ -184,7 +272,7 @@ const t = (key) => {
               <div class="band-header" :style="getBandStyle(bandStory.bandId)">
                   <!-- 3.3 图标资源替换 -->
                   <div class="band-logo-wrapper">
-                      <img :src="getBandIconUrl(bandStory.bandId)" class="band-icon-img" alt="logo" />
+                      <img :src="getBandIconUrl(bandStory.bandId)" class="band-icon-img" alt="logo" loading="lazy" />
                   </div>
                   <h3>{{ getBandName(bandStory.bandId) }}</h3>
               </div>
@@ -195,26 +283,34 @@ const t = (key) => {
                           <h4>{{ t(chap.title) }}</h4>
                           <div class="meta-info">
                              <!-- Show episode count even if 0 -->
-                            <span class="strip-badge">{{ chap.episodes ? chap.episodes.length : 0 }} 话</span>
+                            <span class="strip-badge">{{ chap.episodes ? chap.episodes.length : 0 }} {{ t('ui_episodes') }}</span>
                           </div>
                       </div>
-                      <button class="action-btn">Read</button>
+                      <button class="action-btn">{{ t('ui_read') }}</button>
                   </div>
               </div>
           </div>
       </div>
 
-      <!-- 4. 卡面剧情视图 - 改为网格布局 (复用 event-card 样式) -->
-      <div v-else-if="currentTab === 'card'" class="grid-view">
-          <div v-for="card in cardStories" :key="card.cardId" class="story-card event-card">
-              <!-- 下一步：接入真实头像 -->
-              <div class="card-cover-placeholder">
-                 <small>ID: {{ card.characterId }}</small>
-              </div>
-              <div class="card-info">
-                  <h3>{{ t(card.title) }}</h3>
-                  <span class="badge">{{ card.episodes.length }} 话</span>
-              </div>
+      <!-- 4. 卡面剧情视图 - 分页 -->
+      <div v-else-if="currentTab === 'card'" class="grid-view-container">
+          <div class="grid-view">
+            <div v-for="card in paginatedList" :key="card.cardId" class="story-card event-card">
+                <!-- 下一步：接入真实头像 -->
+                <div class="card-cover-placeholder" loading="lazy">
+                    <small>ID: {{ card.characterId }}</small>
+                </div>
+                <div class="card-info">
+                    <h3>{{ t(card.title) }}</h3>
+                    <span class="badge">{{ card.episodes.length }} {{ t('ui_episodes') }}</span>
+                </div>
+            </div>
+          </div>
+          <!-- Pagination Controls -->
+          <div class="pagination-controls" v-if="totalPages > 1">
+              <button @click="prevPage" :disabled="currentPage === 1">{{ t('ui_prev_page') }}</button>
+              <span>{{ t('ui_page_info', currentPage, totalPages) }}</span>
+              <button @click="nextPage" :disabled="currentPage === totalPages">{{ t('ui_next_page') }}</button>
           </div>
       </div>
 
@@ -230,12 +326,13 @@ const t = (key) => {
                       <p class="strip-desc">{{ story.preview }}</p>
                       <small class="mini-meta">Characters: {{ story.characters.join(', ') }}</small>
                   </div>
-                  <button class="action-btn">View</button>
+                  <button class="action-btn">{{ t('ui_view') }}</button>
               </div>
           </div>
       </div>
 
     </main>
+
   </div>
 </template>
 

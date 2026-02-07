@@ -22,6 +22,54 @@ const createEpisode = (id, title, type, parentId) => ({
     dialogues: [] // 包含具体的对话对象
 });
 
+// 批量生成模拟数据以测试分页
+const generateMockEvents = (count) => {
+    const events = [];
+    for (let i = 1; i <= count; i++) {
+        events.push({
+            id: `mock_event_${i}`,
+            title: `Mock Event ${i} - ${['Happy', 'Sad', 'Exciting', 'Mysterious'][i % 4]} Story`,
+            banner: `banner_${i}.png`,
+            episodes: Array(3).fill(0).map((_, j) => ({
+                id: `me_${i}_ep_${j}`,
+                title: `Episode ${j + 1}`
+            }))
+        });
+    }
+    return events;
+};
+
+const generateMockCards = (count) => {
+    const cards = [];
+    for (let i = 1; i <= count; i++) {
+        cards.push({
+            characterId: (i % 25) + 1,
+            cardId: `mock_card_${i}`,
+            title: `[Mock Card] Character ${(i % 25) + 1} - ${i}`,
+            episodes: Array(2).fill(0).map((_, j) => ({
+                id: `mc_${i}_ep_${j}`,
+                title: `Card Episode ${j + 1}`
+            }))
+        });
+    }
+    return cards;
+};
+
+const generateMockOtherStories = (count) => {
+    const stories = [];
+    const types = ['Area Conversation', 'Live Interaction', 'Lounge', 'Festival'];
+    for (let i = 1; i <= count; i++) {
+        stories.push({
+            id: `mock_other_${i}`,
+            type: types[i % types.length],
+            title: `Mock Conversation ${i}`,
+            characters: [(i % 5) + 1, (i % 5) + 2],
+            preview: `Conversation preview content ${i}...`
+        });
+    }
+    return stories;
+};
+
 // 模拟数据仓库
 export const mockDatabase = {
     // 活动剧情 (Event Stories)
@@ -42,7 +90,8 @@ export const mockDatabase = {
             episodes: [
                 { id: "ev2_ep1", title: "Opening", preview: "..." }
             ]
-        }
+        },
+        ...generateMockEvents(100) // 增加100个模拟活动
     ],
 
     // 主线剧情 (Main Stories) - 有章节概念
@@ -216,7 +265,8 @@ export const mockDatabase = {
                 { id: "card_2101_ep1", title: "Mystery!" },
                 { id: "card_2101_ep2", title: "Michelles Identity" }
             ]
-        }
+        },
+        ...generateMockCards(80) // 增加80个模拟卡面
     ],
 
     // 小对话 (Other/Mini Stories) - 区域对话，Live后对话等
@@ -241,7 +291,8 @@ export const mockDatabase = {
             title: "Cafeteria: Tae & Saaya",
             characters: [2, 5],
             preview: "Bread vs. Rabbit"
-        }
+        },
+        ...generateMockOtherStories(50) // 增加50个模拟小对话
     ]
 };
 

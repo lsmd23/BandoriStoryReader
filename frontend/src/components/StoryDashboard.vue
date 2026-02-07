@@ -5,6 +5,7 @@ import { bands, getBandStyle, getBandIconUrl } from '../services/bands'; // 引�
 import { resolveText } from '../utils/i18n';
 import GlobalSearch from './GlobalSearch.vue';
 import LanguageSelector from './LanguageSelector.vue';
+import PaginationControls from './PaginationControls.vue';
 import '../assets/long-list-styles.css'; // 引入新的长条形列表样式
 import '../assets/pagination.css'; // 引入分页样式
 
@@ -34,6 +35,9 @@ const translations = {
     'ui_view': { cn: '查看', tw: '查看', jp: '見る', kr: '보기', en: 'View' },
     'ui_prev_page': { cn: '上一页', tw: '上一頁', jp: '前のページ', kr: '이전', en: 'Prev' },
     'ui_next_page': { cn: '下一页', tw: '下一頁', jp: '次のページ', kr: '다음', en: 'Next' },
+    'ui_first_page': { cn: '首页', tw: '首頁', jp: '最初', kr: '첫 페이지', en: 'First' },
+    'ui_last_page': { cn: '末页', tw: '末頁', jp: '最後', kr: '마지막 페이지', en: 'Last' },
+    'ui_page_curr': { cn: '页码', tw: '頁碼', jp: 'ページ', kr: '페이지', en: 'Page' },
     'ui_page_info': { cn: '第 {0} / {1} 页', tw: '第 {0} / {1} 頁', jp: '{0} / {1} ページ', kr: '{0} / {1} 페이지', en: 'Page {0} of {1}' },
 
     // Existing Content Translations
@@ -51,9 +55,13 @@ const bandStories = ref([]);
 const cardStories = ref([]);
 const otherStories = ref([]);
 
-// 分页状态
-const pageSize = 20;
+// 分页配置
 const currentPage = ref(1);
+
+const pageSize = computed(() => {
+    if (currentTab.value === 'other') return 5;
+    return 9; // 默认 (活动、卡面)
+});
 
 // 监听 Tab 切换，重置分页
 const switchTab = (tab) => {
@@ -102,41 +110,33 @@ const sortedBandStories = computed(() => {
 
 // 通用分页逻辑
 const getPaginatedData = (data) => {
-    const start = (currentPage.value - 1) * pageSize;
-    const end = start + pageSize;
+    const start = (currentPage.value - 1) * pageSize.value;
+    const end = start + pageSize.value;
     return data.slice(start, end);
 };
 
 const currentDisplayData = computed(() => {
     if (currentTab.value === 'events') return eventStories.value;
     if (currentTab.value === 'card') return cardStories.value;
+    if (currentTab.value === 'other') return otherStories.value;
     return []; // 其他 Tab 暂时不分页或自有逻辑
 });
 
 const totalPages = computed(() => {
     const total = currentDisplayData.value.length;
-    return Math.ceil(total / pageSize) || 1;
+    return Math.ceil(total / pageSize.value) || 1;
 });
 
 const paginatedList = computed(() => {
-    if (currentTab.value === 'events' || currentTab.value === 'card') {
+    if (currentTab.value === 'events' || currentTab.value === 'card' || currentTab.value === 'other') {
         return getPaginatedData(currentDisplayData.value);
     }
     return [];
 });
 
-const nextPage = () => {
-    if (currentPage.value < totalPages.value) {
-        currentPage.value++;
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-};
-
-const prevPage = () => {
-    if (currentPage.value > 1) {
-        currentPage.value--;
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
+const onPageChange = (newPage) => {
+    currentPage.value = newPage;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 };
 
 
@@ -238,11 +238,13 @@ const t = (key, ...args) => {
             </div>
         </div>
         <!-- Pagination Controls -->
-        <div class="pagination-controls" v-if="totalPages > 1">
-            <button @click="prevPage" :disabled="currentPage === 1">{{ t('ui_prev_page') }}</button>
-            <span>{{ t('ui_page_info', currentPage, totalPages) }}</span>
-            <button @click="nextPage" :disabled="currentPage === totalPages">{{ t('ui_next_page') }}</button>
-        </div>
+        <PaginationControls 
+            v-if="totalPages > 1"
+            :current-page="currentPage"
+            :total-pages="totalPages"
+            :t="t"
+            @page-change="onPageChange"
+        />
       </div>
 
       <!-- 2. 主线剧情视图 - 长条形列表 -->
@@ -307,17 +309,19 @@ const t = (key, ...args) => {
             </div>
           </div>
           <!-- Pagination Controls -->
-          <div class="pagination-controls" v-if="totalPages > 1">
-              <button @click="prevPage" :disabled="currentPage === 1">{{ t('ui_prev_page') }}</button>
-              <span>{{ t('ui_page_info', currentPage, totalPages) }}</span>
-              <button @click="nextPage" :disabled="currentPage === totalPages">{{ t('ui_next_page') }}</button>
-          </div>
+          <PaginationControls 
+              v-if="totalPages > 1"
+              :current-page="currentPage"
+              :total-pages="totalPages"
+              :t="t"
+              @page-change="onPageChange"
+          />
       </div>
 
       <!-- 5. 小对话视图 - 长条形列表 -->
       <div v-else-if="currentTab === 'other'" class="list-view-container">
           <div class="story-strip-list">
-              <div v-for="story in otherStories" :key="story.id" class="story-strip">
+              <div v-for="story in paginatedList" :key="story.id" class="story-strip">
                   <div class="strip-content">
                       <div class="strip-header">
                         <h4>{{ t(story.title) }}</h4>
@@ -329,6 +333,14 @@ const t = (key, ...args) => {
                   <button class="action-btn">{{ t('ui_view') }}</button>
               </div>
           </div>
+          <!-- Pagination Controls -->
+          <PaginationControls 
+              v-if="totalPages > 1"
+              :current-page="currentPage"
+              :total-pages="totalPages"
+              :t="t"
+              @page-change="onPageChange"
+          />
       </div>
 
     </main>
